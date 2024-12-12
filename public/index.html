@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - LinkedIn Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/linkedin-logo.png" alt="Logo LinkedIn">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.php" class="active">Accueil</a></li>
+                    <li><a href="network.php">Mon Réseau</a></li>
+                    <li><a href="jobs.php">Emplois</a></li>
+                    <li><a href="messaging.php">Messagerie</a></li>
+                    <li><a href="notifications.php">Notifications</a></li>
+                </ul>
+            </nav>
+            <div class="profile-menu">
+                <img src="<?= htmlspecialchars($user['profile_photo']) ?>" alt="Profil">
+                <span><?= htmlspecialchars($user['first_name']) ?></span>
+                <a href="logout.php">Se déconnecter</a>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
